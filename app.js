@@ -17,7 +17,7 @@
   app.listen(port,()=>{
     console.log(`server is listening on port:${port}`);
   })
-  mongoose.connect("mongodb+srv://wankhedetushar18:tushar%40123@cluster0.hcq7k.mongodb.net/Youtube?retryWrites=true&w=majority&appName=Cluster0");
+  mongoose.connect(process.env.MONGODB_URI);
   const db = mongoose.connection;
   db.on("open",()=>{
     console.log("Databse is connected");
