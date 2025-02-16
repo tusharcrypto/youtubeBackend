@@ -1,5 +1,5 @@
 import User from "../Model/user.model.js";
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 import dotenv from "dotenv";
 import { Video } from "../Model/vedio.model.js";
