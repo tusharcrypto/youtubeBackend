@@ -43,16 +43,16 @@
 
     try {
       const vid = new Video({
-        channel: channel,  // Assuming channel is an ObjectId for Channel reference
+        channel: channel,  
         title: title,
-        viewCount: viewCount || 0,  // Default to 0 if viewCount is not provided
-        likeCount: likeCount || 0,  // Default to 0 if likeCount is not provided
+        viewCount: viewCount || 0, 
+        likeCount: likeCount || 0,  
         description: description,
         videoId: videoId,
         thumbnailUrl: thumbnailUrl,
         category: category,
-        comments: comments || [],  // Default to empty array if no comments are provided
-        createdAt: createdAt || Date.now(),  // If no createdAt is provided, use the current timestamp
+        comments: comments || [], 
+        createdAt: createdAt || Date.now(),  
       });
 
       await vid.save();
