@@ -10,10 +10,10 @@
   app.use(cors());
   app.use(express.json())
   app.use(cors({
-    origin: 'http://localhost:5173', 
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true, 
-  }));  ;
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
+
   app.listen(port,()=>{
     console.log(`server is listening on port:${port}`);
   })
